@@ -1,3 +1,5 @@
-(function () {
-   console.log("refactor this")
-})()
+import {Connection} from "./Connection";
+
+export {
+    Connection,
+}

@@ -3,6 +3,9 @@ const path = require('path');
 module.exports = {
     entry: './src/index.ts',
     mode: "development",
+    devServer: {
+        static: './dist',
+    },
     module: {
         rules: [
             {
@@ -18,5 +21,6 @@ module.exports = {
     output: {
         filename: 'lagring.js',
         path: path.resolve(__dirname, 'dist'),
+        library: "lagring"
     },
 };
